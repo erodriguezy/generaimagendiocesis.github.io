@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superponer Imagen</title>
+    <!-- Incluir Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Incluir archivo CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h2 class="mb-4">Superponer Imagen</h2>
+        
+        <!-- Instrucciones -->
+        <div class="instructions">
+            <ol>
+                <li>Haz click en <strong>Seleccionar archivo</strong> y busca la foto de perfil que deseas publicar.</li>
+                <li>Haz click derecho en la imagen y selecciona <strong>Descargar</strong>. En tu celular, presiona durante un tiempo en la foto hasta que se muestre un menú y selecciona <strong>Guardar</strong>.</li>
+                <li>Elige el lugar donde deseas guardar tu foto.</li>
+                <li>Modifica tu foto de perfil con la imagen descargada.</li>
+            </ol>
+        </div>
+
+        <!-- Botón de selección de archivo -->
+        <label for="upload" class="btn btn-primary btn-lg btn-block">Seleccionar archivo</label>
+        <input type="file" id="upload" class="d-none" accept="image/*">
+        
+        <!-- Canvas para mostrar la imagen -->
+        <div class="my-3">
+            <canvas id="canvas" class="border rounded"></canvas>
+        </div>
+        
+        <!-- Botón de descarga -->
+        <button id="downloadBtn" class="btn btn-primary mt-3">Descargar Imagen</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

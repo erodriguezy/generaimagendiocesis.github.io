@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Instrucciones */
+.instructions {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* Estilo del canvas 
+canvas {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+}
+
+/* Botón de descarga y selector de archivo */
+.btn-primary, .form-control-file {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    margin-top: 10px;
+}
+
+.form-control-file {
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
